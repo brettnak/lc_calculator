@@ -1,0 +1,102 @@
+*~
+.sass-cache
+.DS_Store
+log/*
+solr/solr/data/*
+solr/logs/*
+solr/work/*
+solr/solr/*/data/*
+vendor/gems/json-1.1.5/*
+vendor/bundle
+tmp
+servers.txt
+dump.rdb
+bin/dump.rdb
+dump.rdb
+.idea
+archives
+public/native-browse.html
+public/native-search.html
+.DS_Store
+pids
+
+# RVM files
+.gemrc
+
+# Rbenv files
+.rbenv-vars
+
+# All Komodo Project Files
+*.komodoproject
+.bundle
+*.sublime-workspace
+lib/tasks/pry.rake
+doc/
+.yardoc
+.awscli
+
+# db files, since we've fixed the seeds
+*.sqlite3
+*.sqlite3-journal
+tools
+
+# developer-local config files
+*_local.*
+*.local.*
+*_local
+lib/tasks/docker.rake
+
+# vagrant VMs
+.vagrant*
+Vagrantfile
+cookbooks
+
+# specjour distributed testing
+.specjour
+
+*.localmachine.*
+*.lm.*
+salt
+
+*.hot-update.*
+*.delphi.css
+public/assets*
+Procfile
+*.tmp.rb
+lib/nodejs
+
+# code coverage summary
+coverage
+
+# custom name-> email mappings for git logs
+.mailmap
+
+# shortcuts
+rebase
+
+.c9revisions
+.settings
+.c9save
+
+public/statsd.html
+
+config/mat_api_key.txt
+*.env
+.irbrc
+.irb_history
+REVISION
+GIT_REVISION
+.zedstate
+
+node_modules
+*.bundle.js
+jb.key
+
+config/newrelic.yml
+.bash_history
+fig.yml
+.data
+tags
+
+.samsonite.d/TARGET
+.samsonite.d/exclude_local
