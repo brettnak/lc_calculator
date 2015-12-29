@@ -4,9 +4,9 @@
 ```
 $ ./lc.rb
 > Options:
->   -c, --capacitance=<f>    The capacitance of your LC circuit (in NanoFarads) (default: 0.0)
->   -f, --frequency=<f>      The desired frequency of your LC circuit (in KiloHertz (default: 0.0)
->   -l, --inductance=<f>     The inductance of the LC circuit (default: 0.0)
+>   -c, --capacitance=<f>    The capacitance of your LC circuit ( nF )
+>   -f, --frequency=<f>      The desired frequency of your LC circuit ( kHZ )
+>   -l, --inductance=<f>     The inductance of the LC circuit ( uH )
 > Calculate the inductance needed for an LC oscillator
 
 
