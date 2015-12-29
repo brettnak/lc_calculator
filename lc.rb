@@ -49,10 +49,13 @@ class LCFCalculator
 
     def gather_args( argv )
       parser = Trollop::Parser.new do
+        banner <<-EOD
+Calculate the parameters for an LC oscillator.
+EOD
+
         opt :capacitance, "The capacitance of your LC circuit (in NanoFarads)",     :short => "-c", :type => :float
         opt :frequency,   "The desired frequency of your LC circuit (in KiloHertz", :short => "-f", :type => :float
         opt :inductance,  "The inductance of the LC circuit",                       :short => "-l", :type => :float
-        banner "Calculate the inductance needed for an LC oscillator"
       end
 
       return Trollop::with_standard_exception_handling( parser ) do
