@@ -9,9 +9,9 @@ class LCFCalculator
   #  :capacitance  - Float; in Nano Farads
   #  :inductance   - Float; in Micro Henries
   def initialize( parameters = {} )
-    @frequency   = parameters.fetch( :frequency  , 0.0 ) * 1000.0
-    @capacitance = parameters.fetch( :capacitance, 0.0 ) * 1.0e-9
-    @inductance  = parameters.fetch( :inductance,  0.0 ) * 1.0e-6
+    @frequency   = ( parameters[:frequency   ] || 0.0 ) * 1000.0
+    @capacitance = ( parameters[:capacitance ] || 0.0 ) * 1.0e-9
+    @inductance  = ( parameters[:inductance  ] || 0.0 ) * 1.0e-6
   end
 
   # f = 1.0 / ( 2pi * sqrt( LC ))
@@ -49,9 +49,9 @@ class LCFCalculator
 
     def gather_args( argv )
       parser = Trollop::Parser.new do
-        opt :capacitance, "The capacitance of your LC circuit (in NanoFarads)",     :short => "-c", :type => :float, :default => 0.0
-        opt :frequency,   "The desired frequency of your LC circuit (in KiloHertz", :short => "-f", :type => :float, :default => 0.0
-        opt :inductance,  "The inductance of the LC circuit",                       :short => "-l", :type => :float, :default => 0.0
+        opt :capacitance, "The capacitance of your LC circuit (in NanoFarads)",     :short => "-c", :type => :float
+        opt :frequency,   "The desired frequency of your LC circuit (in KiloHertz", :short => "-f", :type => :float
+        opt :inductance,  "The inductance of the LC circuit",                       :short => "-l", :type => :float
         banner "Calculate the inductance needed for an LC oscillator"
       end
 
