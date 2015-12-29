@@ -7,7 +7,7 @@ $ ./lc.rb
 >   -c, --capacitance=<f>    The capacitance of your LC circuit ( nF )
 >   -f, --frequency=<f>      The desired frequency of your LC circuit ( kHZ )
 >   -l, --inductance=<f>     The inductance of the LC circuit ( uH )
-> Calculate the inductance needed for an LC oscillator
+> Calculate the parameters for an LC oscillator.
 
 
 $./lc.rb -l 130 -f 433
